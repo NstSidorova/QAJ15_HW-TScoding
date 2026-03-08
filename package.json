@@ -1,0 +1,27 @@
+{
+  "name": "coding_training",
+  "version": "1.0.0",
+  "description": "resolve homework",
+  "homepage": "https://github.com/NstSidorova/QAJ15_HW-TScoding#readme",
+  "bugs": {
+    "url": "https://github.com/NstSidorova/QAJ15_HW-TScoding/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NstSidorova/QAJ15_HW-TScoding.git"
+  },
+  "license": "ISC",
+  "author": "sidorova_nst@mail.ru",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prettier": "^3.8.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
