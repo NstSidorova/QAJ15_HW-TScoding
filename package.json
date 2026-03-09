@@ -15,7 +15,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "tsx task1.ts",
+    "task2": "tsx task2.ts",
+    "task3": "tsx task3.ts",
+    "task4": "tsx task4.ts"
   },
   "dependencies": {
     "prettier": "^3.8.1"
