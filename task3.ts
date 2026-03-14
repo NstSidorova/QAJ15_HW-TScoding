@@ -10,7 +10,7 @@ function calculateCartItem(cart: Array<CartItem>) {
   const total = cart.reduce(function (acc, val) {
     return acc + val.price * val.quantity;
   }, 0);
-  return total
+  return total;
 }
 const cart = [
   { name: 'Бумага', price: 7, quantity: 5 },
