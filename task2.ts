@@ -2,12 +2,12 @@
 
 function createArray(size: number = 10, maxValue: number = 100, multiply: number = 3) {
   let arr = [];
-  while (arr.length < size){
-    arr.push(Math.floor(Math.random() * maxValue)+1);
+  while (arr.length < size) {
+    arr.push(Math.floor(Math.random() * maxValue) + 1);
   }
-  arr.sort((a,b) => b - a);
+  arr.sort((a, b) => b - a);
   let resultArray = arr.splice(0, multiply);
-  const result = resultArray.reduce((acc, value) => acc*value);
+  const result = resultArray.reduce((acc, value) => acc * value);
   return result;
 }
 console.log(createArray());
