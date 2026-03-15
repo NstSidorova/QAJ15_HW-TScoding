@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "flower121",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "username": "sunnyLove",
+    "role": "support"
+  },
+  {
+    "id": 3,
+    "username": "helloWorld",
+    "role": "QA"
+  },
+  {
+    "id": 4,
+    "username": "bigPerson",
+    "role": "support"
+  },
+  {
+    "id": 5,
+    "username": "bugDeveloper",
+    "role": "QA"
+  },
+  {
+    "id": 6,
+    "username": "hi223",
+    "role": "QA"
+  }
+]
