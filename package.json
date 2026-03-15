@@ -19,7 +19,11 @@
     "task1": "tsx task1.ts",
     "task2": "tsx task2.ts",
     "task3": "tsx task3.ts",
-    "task4": "tsx task4.ts"
+    "task4": "tsx task4.ts",
+    "task5": "tsx task5.ts",
+    "task6": "tsx task6.ts",
+    "task7": "tsx task7.ts",
+    "task8": "tsx task8.ts"
   },
   "devDependencies": {
     "@types/node": "^25.3.5",
