@@ -8,19 +8,26 @@
 //   input: 'Password123!' -> output: { isValid: true, digits: [1, 2, 3] }
 //   input: 'myC00!Pa55w0rd' -> output: { isValid: true, digits: [0, 0, 5, 5, 0] }
 
-function checkPassword (pass: string) {
+function checkPassword(pass: string) {
   const passwordLengthMin = 8;
   const passwordLengthMax = 15;
-  if (pass.length < passwordLengthMin || pass.length > passwordLengthMax || !/[A-Z]/g.test(pass) || !/[0-9]/g.test(pass) || /[А-Яа-яЁё]/g.test(pass) || !/[!^@_$&*()-+]/g.test(pass)) {
+  if (
+    pass.length < passwordLengthMin ||
+    pass.length > passwordLengthMax ||
+    !/[A-Z]/g.test(pass) ||
+    !/[0-9]/g.test(pass) ||
+    /[А-Яа-яЁё]/g.test(pass) ||
+    !/[!^@_$&*()-+]/g.test(pass)
+  ) {
     return false;
   }
-  return true
+  return true;
 }
-console.log(checkPassword("fFffffffdd1+"))
+console.log(checkPassword('fFffffffdd1+'));
 
-function checkDigits (password: string) {
-  const isValid = checkPassword(password)
-  const digits = password.match(/[0-9]/gi)
-  return { isValid, digits}
+function checkDigits(password: string) {
+  const isValid = checkPassword(password);
+  const digits = password.match(/[0-9]/g);
+  return { isValid, digits };
 }
-console.log(checkDigits("12GF22ggf+"))
+console.log(checkDigits('12GF22ggf+'));

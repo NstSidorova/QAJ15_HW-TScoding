@@ -13,5 +13,5 @@ function addWord(word = 'котик') {
     throw new Error('Строка должна содержать только кириллицу или только латиницу.');
   }
 }
-console.log(addWord("12"));
-console.log(addWord("собака"));
+console.log(addWord('12'));
+console.log(addWord('собака'));
