@@ -3,15 +3,20 @@
 function addWord(word = 'котик') {
   const containsCyrillic = /^[а-яёА-ЯЁ]+$/;
   const containsLatin = /^[a-zA-Z]+$/;
+  const conditionOne = containsCyrillic.test(word)
+  const conditionTwo = containsLatin.test(word)
+  if (!conditionOne && !conditionTwo) {
+    throw new Error('Строка должна содержать только кириллицу или только латиницу.');
+  }
   if (containsCyrillic.test(word)) {
     return 'супер' + word;
   }
   if (containsLatin.test(word)) {
     return 'super' + word;
   }
-  if (!containsCyrillic.test(word) || !containsLatin.test(word)) {
-    throw new Error('Строка должна содержать только кириллицу или только латиницу.');
-  }
 }
-console.log(addWord("12"));
+// console.log(addWord("12"));
 console.log(addWord("собака"));
+console.log(addWord("dog"));
+console.log(addWord("dogсобака"));
+console.log(addWord("():)"));
