@@ -18,11 +18,11 @@ class Calculator {
     return a - b;
   }
 }
-const calc = new Calculator();
+export const calc = new Calculator();
 // console.log(calc.add(10));
 // console.log(calc.multiply(2));
 // console.log(calc.divide(2,0));
-console.log(calc.subtract(2, 4));
+// console.log(calc.subtract(2, 4));
 
 // const arr = [1, 4, 76, 111];
 // const [numb1, numb2] = arr

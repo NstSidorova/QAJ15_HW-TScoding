@@ -25,12 +25,24 @@
     "task7": "tsx task7.ts",
     "task8": "tsx task8.ts",
     "task9": "tsx task9.ts",
-    "task10": "tsx task10.ts"
+    "task10": "tsx task10.ts",
+    "testmocha": "npx mocha --config ./mocha/config/.mocharc"
   },
   "devDependencies": {
-    "@types/node": "^25.3.5",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/mochawesome": "^6.2.5",
+    "@types/node": "^25.5.0",
+    "chai": "^6.2.2",
+    "mocha": "^11.3.0",
+    "mochawesome": "^7.1.4",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.6"
   }
 }
