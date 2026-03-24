@@ -1,6 +1,6 @@
 // 5. Реализовать класс калькулятор, с минимум следующими методами: сложение, вычитание, умножение, деление. Эта задача нам пригодится впоследствии
 
-class Calculator {
+export class Calculator {
   add(...a: number[]) {
     return a.reduce((acc, value) => acc + value, 0);
   }
