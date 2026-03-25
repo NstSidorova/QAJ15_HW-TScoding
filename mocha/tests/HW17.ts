@@ -57,7 +57,7 @@ describe('Сложение', () => {
       expect(result).to.equal(3);
     });
     it('Деление на 0', () => {
-      expect(() => calc.divide(3, 0)).to.throw(Error, 'Деление на ноль запрещено');
+      expect(() => calc.divide(3, 0)).to.throw(Error, 'Ошибка: деление на ноль');
     });
   });
 });
